@@ -21,7 +21,7 @@ beforeEach(async () => {
 
   InboxContract = await new web3.eth.Contract(ABI)
     .deploy({
-      data: bytecode,
+      data: '0x0' + bytecode,
       arguments: [initialMessage]
     })
     .send({

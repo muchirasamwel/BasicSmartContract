@@ -34,6 +34,6 @@ var output = JSON.parse(solc.compile(JSON.stringify(input)))
 // }
 // const res = solc.compile(source,1)
 module.exports = {
-  bytecode: '0x0' + output.contracts['Inbox.sol'].Inbox.evm.bytecode.object,
+  bytecode: output.contracts['Inbox.sol'].Inbox.evm.bytecode.object,
   ABI: output.contracts['Inbox.sol'].Inbox.abi
 }
