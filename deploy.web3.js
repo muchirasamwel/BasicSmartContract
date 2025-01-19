@@ -36,6 +36,7 @@ const deploy = async () => {
     })
 
   console.log('inboxContract deployed..', inboxContract._address)
+  provider.engine.stop()
 }
 
 deploy()
